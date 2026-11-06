@@ -65,6 +65,10 @@
 #   bash build-adb.sh --static                         # 本机静态链接
 #   bash build-adb.sh --arch aarch64 --cc aarch64-linux-gnu-gcc --cxx aarch64-linux-gnu-g++
 #   bash build-adb.sh --arch aarch64 --glibc /usr/aarch64-linux-gnu
+#   bash -x build-adb.sh --arch aarch64 --no-install --static --version 37.0.0
+#        --cxx /usr/local/cortex-a76-2026.04-gcc14.3-linux6.12/bin/aarch64-linux-gnu-g++ 
+#        --cc /usr/local/cortex-a76-2026.04-gcc14.3-linux6.12/bin/aarch64-linux-gnu-gcc 
+#        --sysroot /repo/phoenix-manifest/amb/ambarella/out/global-sysroot/cortex-a76 
 #
 set -Eeuo pipefail
 
